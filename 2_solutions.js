@@ -12,7 +12,7 @@ const promiseAll = (promises) => {
           resolvedCount++;
 
           if (resolvedCount == promises.length) {
-            resolve();
+            resolve(data);
           }
         })
         .catch(reject);
